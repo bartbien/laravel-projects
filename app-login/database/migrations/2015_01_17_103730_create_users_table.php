@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration {
 			$table->string('email', 320);
 			$table->string('password', 64);
 
+					  // required for Laravel 4.1.26
+					  $table->string('remember_token', 100)->nullable();
 			$table->timestamps();
 		});
 	}
@@ -32,7 +34,10 @@ class CreateUsersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('users');
+		Schema::table('users', function(Blueprint $table)
+		{
+			Schema::drop('users');
+		});
 	}
 
 }
