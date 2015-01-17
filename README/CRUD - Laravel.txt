@@ -1,0 +1,14 @@
+
+https://scotch.io/tutorials/simple-laravel-crud-with-resource-controllers
+
+**
+RUN
+php artisan migrate:make create_nerds_table --table=nerds --create 
+This will create our nerd migration in app/database/migrations
+**
+Create database, user and password in database.
+Make sure your database settings are good in app/config/database.php and then run:
+RUN
+php artisan migrate 
+Our database now has a nerds table
+**

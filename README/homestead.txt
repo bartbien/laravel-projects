@@ -1,0 +1,3 @@
+http://laravel.com/docs/4.2/homestead
+
+https://scotch.io/tutorials/getting-started-with-laravel-homestead
