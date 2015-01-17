@@ -1,1 +1,3 @@
 https://scotch.io/tutorials/simple-and-easy-laravel-login-authentication
+
+php artisan migrate:make create_users_table --table=users --create
