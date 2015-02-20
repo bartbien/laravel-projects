@@ -1,0 +1,19 @@
+check app/config - database.php
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'test',
+			'username'  => 'root',
+			'password'  => '',
+
+create 'database'  => 'test',
+
+make sure you've composer
+
+run in main dir of this project
+php artisan migrate
+
+
+
+
+--additional how to create table with composer
+https://scotch.io/tutorials/simple-laravel-crud-with-resource-controllers

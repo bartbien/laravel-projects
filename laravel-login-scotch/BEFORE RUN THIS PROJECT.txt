@@ -1,0 +1,28 @@
+copy vendor dir (from main dir of this project) to this dir
+
+check app/config - database.php
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'test',
+			'username'  => 'root',
+			'password'  => '',
+
+create 'database'  => 'test',
+or make sure table is empty
+make sure you've right user in database
+
+make sure you've composer
+
+run in main dir of this project (this command create tables in database)
+php artisan migrate
+
+this command create users in table from seeds files 
+php artisan db:seed
+
+
+ 'email'    => 'chris@scotch.io',
+ 'password' => Hash::make('awesome'),
+
+
+--additional how to create table with composer
+https://scotch.io/tutorials/simple-and-easy-laravel-login-authentication
