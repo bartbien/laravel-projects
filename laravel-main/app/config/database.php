@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'test',
-			'username'  => 'root',
-			'password'  => '',
+			'database'  => 'laravel_hotlink',
+			'username'  => 'laravel',
+			'password'  => 'laravel',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
